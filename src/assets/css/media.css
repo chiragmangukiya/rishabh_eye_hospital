@@ -1,0 +1,38 @@
+@media screen and (min-width:992px) {
+
+    .main_menu a{
+        padding: 28px 40px 28px 0 !important;
+    }
+    
+}
+@media screen and (max-width:991px) {
+    .navbar-toggler{
+        border: none;
+        font-size: 30px;
+        color: #37C38F;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .logo_name{
+        font-size: 20px;
+    }
+    .main_menu a{
+        padding: 15px !important;
+    }
+}
+@media screen and (max-width:768px) {
+
+    .top_contact_info > div{
+        margin-top: 10px;
+    }
+    .top_contact_info span,
+    .top_contact_info a{
+        font-size: 12px;
+    }
+    .cont_icon{
+        font-size: 16px;
+    }
+    
+    
+}
