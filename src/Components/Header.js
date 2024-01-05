@@ -32,7 +32,7 @@ function Header() {
             </div>
             
             <div className="bg-white">
-                <Navbar expand="md" className="bg-body-tertiary">
+                <Navbar expand="md" className="bg-body-tertiary py-0">
                     <Container>
                         <Navbar.Brand href="#home" className='logo_name'>Rishabh Eye Hospital</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav">
