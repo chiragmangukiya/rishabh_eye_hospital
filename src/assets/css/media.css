@@ -20,9 +20,13 @@
     .main_menu a{
         padding: 15px !important;
     }
+
 }
 @media screen and (max-width:768px) {
-
+    .spacer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
     .top_contact_info > div{
         margin-top: 10px;
     }
@@ -33,6 +37,106 @@
     .cont_icon{
         font-size: 16px;
     }
-    
-    
+    .main_banner{
+        padding: 40px 0;
+    }
+    .banner_doctor_img{
+        width: 80%;
+        position: relative;
+        top: 50px;
+    }
+    .banner_title{
+        font-size: 24px;
+        line-height: 40px;
+        padding-right: 30px;
+    }
+    .banner_subtitle{
+        font-size: 16px;
+    }
+    .book_lable{
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .form_header{
+        margin-bottom: 8px !important;
+    }
+    .banner_form{
+        margin-right: 0;
+        padding: 6px 7px;
+        border-radius: 8px;
+    }
+    .check_circle{
+        height: 7px;
+        width: 7px;
+        font-size: 7px;
+    }
+    .radio_name{
+        font-size: 7px;
+    }
+    .custom-radios label{
+        margin: 0 3px;
+    }
+    .search_box input{
+        padding: 5px 14px;
+        border-radius: 4px;
+        font-size: 8px;
+        width: 70px;
+        line-height: 12px;
+    }
+    .search_icon{
+        right: 10px;
+        font-size: 10px;
+        top: 60%;
+    }
+    .input_icon{
+        height: 20px;
+        width: 20px;
+        font-size: 9px;
+        left: 5px;
+    }
+    .select_opt .input_box{
+        font-size: 8px;
+        padding-left: 30px;
+        height: 30px;
+        border-radius: 4px;
+    }
+    .select_opt label{
+        font-size: 8px;
+        margin-left: 19px;
+    }
+    .form-floating>.form-control{
+        min-height: auto;
+    }
+    .form-floating>.form-control:not(:placeholder-shown)~label{
+        transform: scale(.85) translateY(-1.0rem) translateX(0.15rem);
+    }
+    .form-floating>.form-control:not(:placeholder-shown){
+        padding-top: 23px;
+    }
+    .txt_box{
+        font-size: 8px;
+        line-height: 12px;
+        border-radius: 4px;
+        padding: 7px 6px;
+    }
+    .btn-booking{
+        padding: 6px 14px;
+        border-radius: 4px;
+        font-size: 7px;
+        line-height: 12px;
+        width: 100px;
+    }
+    .main_banner{
+        /* height: calc(100vh - 124px); */
+        background-image: linear-gradient(rgba(55, 195, 143,.7), rgba(55, 195, 143,.7)), url('../image/banner_bg.png');
+        background-size: cover,cover;
+        background-repeat: no-repeat;
+    }
+    .section_title{
+        font-size: 20px;
+    }
+    .section_title svg{
+        position: relative;
+        bottom: 15px;
+    }
 }

@@ -5,11 +5,18 @@ import OwlCarousel from 'react-owl-carousel';
 const client_logo={
     loop:true,
     margin:10,
-    items:8,
     dots:false,
     autoplay:true,
     autoplayTimeout:3000,
-    smartSpeed:1000
+    smartSpeed:1000,
+    responsive:{
+        0:{
+            items:3
+        },
+        992:{
+            items:8
+        }
+    }
 }
 
 function Home() {
@@ -27,7 +34,7 @@ function Home() {
                                 <p className='banner_subtitle'>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
                             </div>
                             <div className="banner_form">
-                                <div className="form_header d-flex align-items-center mb-3">
+                                <div className="form_header d-flex flex-wrap align-items-center mb-3">
                                     <p className='book_lable'>Book an appointment</p>
                                     <div class="custom-radios d-flex">
                                         <label htmlFor="opt1">
@@ -53,12 +60,12 @@ function Home() {
                                         </label>
                                         
                                     </div>
-                                    <div className='search_box ms-auto position-relative'>
+                                    <div className='search_box ms-auto position-relative d-flex'>
                                         <input type="text" placeholder='Search' />
                                         <FaSistrix className='search_icon' />
                                     </div>
                                 </div>
-                                <div className="row">
+                                <div className="row gx-2">
                                     <div className="col-4 select_opt">
                                         <div className="form-floating mb-3 position-relative">
                                             <input type="text" className="form-control input_box" id="floatingInput" value="Surat, Gujarat" />
@@ -90,11 +97,14 @@ function Home() {
                                             <input type="text" className="form-control txt_box" id="floatingInput" placeholder="Phone" />
                                         </div>
                                     </div>
-                                    <div className="col-12 text-end">
+                                    <div className="col-12 text-md-end text-center">
                                         <input type="submit" className='btn btn-booking' value="Booking Now" />
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="col-12 d-md-none d-block text-center">
+                            <img src={require('../assets/image/banner_doctor.png')} className='banner_doctor_img' alt="" />
                         </div>
                     </div>
                 </div>
@@ -117,7 +127,7 @@ function Home() {
                         <rect width="8" height="3.97701" rx="1.98851" fill="#37C38F"/>
                     </svg>
                 </div>
-                <div className="row mt-5">
+                <div className="row mt-md-5 mt-0">
                     <OwlCarousel className='owl-theme employee_logo' {...client_logo} >
                         <div class='item'>
                             <img src={require('../assets/image/logo (1).png')} alt="" />
